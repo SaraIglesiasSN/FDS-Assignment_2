@@ -7,13 +7,13 @@ This file contains the definition of the RemoteBuffer interface. It extends the 
 
 StringServer.java:
 
-This file contains the implementation of the RemoteBuffer interface. It extends the UnicastRemoteObject class, which provides a default implementation for the Remote interface. The StringServer class contains a private StringBuffer instance variable that stores the string to be processed. The class implements the buffer(), append_R(), and append_S() methods of the RemoteBuffer interface. In addition, it has a main method that creates an instance of the StringServer class and binds it to a name in the RMI registry.
+This file contains the implementation of the RemoteBuffer interface. It extends the UnicastRemoteObject class, which provides a default implementation for the Remote interface. The StringServer class contains a private StringBuffer instance variable that stores the string to be processed. The class implements the buffer(), append_R(), and append_S() methods of the RemoteBuffer interface. It also provides the implementation of the printAndCountLetters() method, which counts the number of letters in the message by iterating over each character in the message and by using the Character.isLetter() method, it checks whether it is a letter. In addition, it has a main method that creates an instance of the StringServer class and binds it to a name in the RMI registry.
 
 StringClient.java:
 
 This file contains the client code that invokes the remote methods on the StringServer object. It looks up the RemoteBuffer object in the RMI registry, and invokes the append_S() and append_R() methods of the RemoteBuffer interface.
 
-In this file, you would implement the printAndCountLetters method which would be invoked by the server, and would print the string received on the server console, count the number of letters in it, and return the count to the client.
+In this file, you would implement the printAndCountLetters method which would be called by the server, and would print the string received on the server console, count the number of letters in it, and return the count to the client.
 
 In summary, RemoteBuffer.java defines the interface for the remote methods, StringServer.java implements the methods of the interface and binds it to the RMI registry, and StringClient.java uses the RMI registry to look up the RemoteBuffer object and invoke its methods.
 
