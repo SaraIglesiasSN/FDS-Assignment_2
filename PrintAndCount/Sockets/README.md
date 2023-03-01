@@ -1,19 +1,3 @@
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-
 ## Code Explanation
 
 The code is a simple example of a client-server communication using sockets in Java. The server provides a method called countLetters which takes a String parameter and returns an integer representing the number of letters in the string. The server listens on port 8888 for incoming client connections.
@@ -39,3 +23,14 @@ The client reads the response from the server using in.readLine() and parses it 
 The client prints the count received from the server to the console.
 The client closes the socket.
 Overall, this code shows how to implement a basic client-server communication using sockets in Java. The server listens for incoming client connections and processes the client requests by executing a server method and returning a response. The client sends a request to the server and waits for the response.
+
+## Running it
+
+bash: (from RMI directory)
+
+javac Server.java 
+javac Client.java
+
+java Server
+
+java Client
