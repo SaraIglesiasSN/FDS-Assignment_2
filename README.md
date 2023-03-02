@@ -2,9 +2,9 @@
 
 Students:
 
-Sara Iglesias (sXXXXXXX)
+Sara Iglesias Suárez-Noguerol (s5378176)
 Simon Rozenberg Travancas (s5351618)
-Yin "Johnny" Silver (sXXXXXXX)
+Junsheng Yin (s4774280)
 
 This repository/folder contains the solutions for group 15 of the Fundamentals of Distributed Systems RUG M.Sc. course for 2023, semester IIa.
 
