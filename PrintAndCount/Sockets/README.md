@@ -23,14 +23,3 @@ The client reads the response from the server using in.readLine() and parses it 
 The client prints the count received from the server to the console.
 The client closes the socket.
 Overall, this code shows how to implement a basic client-server communication using sockets in Java. The server listens for incoming client connections and processes the client requests by executing a server method and returning a response. The client sends a request to the server and waits for the response.
-
-## Running it
-
-bash: (from RMI directory)
-
-javac Server.java 
-javac Client.java
-
-java Server
-
-java Client

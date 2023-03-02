@@ -16,20 +16,3 @@ This file contains the client code that invokes the remote methods on the String
 In this file, you would implement the printAndCountLetters method which would be called by the server, and would print the string received on the server console, count the number of letters in it, and return the count to the client.
 
 In summary, RemoteBuffer.java defines the interface for the remote methods, StringServer.java implements the methods of the interface and binds it to the RMI registry, and StringClient.java uses the RMI registry to look up the RemoteBuffer object and invoke its methods.
-
-
-## Running each in a different terminal
-bash: (from RMI directory)
-
-javac RemoteBuffer.java StringServer.java StringClient.java
-
-rmiregistry 1099
-
-(from FDS-Assignment_2 directory)
-
-new terminal:
-java -cp . PrintAndCount.RMI.StringServer 8000
-
-new terminal: 
-
-java -cp . PrintAndCount.RMI.StringClient localhost 8000

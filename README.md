@@ -8,6 +8,14 @@ Yin "Johnny" Silver (sXXXXXXX)
 
 This repository/folder contains the solutions for group 15 of the Fundamentals of Distributed Systems RUG M.Sc. course for 2023, semester IIa.
 
+Before we to into the answers to the questions, a few important remark:
+
+The `rmiregistry 1099` command needs to be interrupted and run again between runs of the server processes. Otherwise the server fails to establish a connection to the RMI Registry.
+
+for each assignment, we have 3 scripts: `compileBinaries.sh`, `runServer.sh` and `runClient.sh`. For each of the assignments, you need to cd into the assignment folder (`Sockets`, `RMI`, and `RMIAtLeastOnce`), and then run `compileBinaries.sh` once, then run in 2 different terminals the `./runServer.sh` and `./runClient.sh`. Explanations of the solutions can be found in the `README.md`s inside each of the assignment folders.
+
+Now, without further ado, the solution to the problems:
+
 The solution for the assignment a is inside the folder "Sockets".
 
 The solution for the assignment b is inside the folder "RMI".
