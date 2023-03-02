@@ -1,1 +1,1 @@
-javac StringServer.java StringClient.java
+javac Server.java Client.java
