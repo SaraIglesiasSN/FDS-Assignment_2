@@ -30,6 +30,6 @@ public class StringServer extends UnicastRemoteObject implements RemoteBuffer {
 
     public static void main(String[] args) throws Exception {
         StringServer server = new StringServer("A");
-        Naming.bind("rmi://localhost:1000/MyBuffer", server);
+        Naming.bind("rmi://localhost:1099/MyBuffer", server);
     }
 }

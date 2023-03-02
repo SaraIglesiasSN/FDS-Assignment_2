@@ -23,13 +23,13 @@ bash: (from RMI directory)
 
 javac RemoteBuffer.java StringServer.java StringClient.java
 
-rmiregistry 1000
+rmiregistry 1099
 
 (from FDS-Assignment_2 directory)
 
 new terminal:
-java -cp . PrintAndCount.RMI.StringServer 1000
+java -cp . PrintAndCount.RMI.StringServer 8000
 
 new terminal: 
 
-java -cp . PrintAndCount.RMI.StringClient localhost 1000
+java -cp . PrintAndCount.RMI.StringClient localhost 8000

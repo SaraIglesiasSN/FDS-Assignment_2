@@ -5,7 +5,7 @@ import java.rmi.RemoteException;
 
 public class StringClient {
     public static void main(String[] args) throws Exception {
-        RemoteBuffer rb = (RemoteBuffer) Naming.lookup("rmi://localhost:1000/MyBuffer");
+        RemoteBuffer rb = (RemoteBuffer) Naming.lookup("rmi://localhost:1099/MyBuffer");
 
         String message = "Hello World!";
         int count = rb.printAndCountLetters(message);
