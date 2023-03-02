@@ -11,7 +11,7 @@ public class StringServer extends UnicastRemoteObject implements RemoteBuffer {
         this.buffer = new StringBuffer(s);
     }
 
-    public void printAndCountLetters(String message) throws RemoteException {
+    public int printAndCountLetters(String message) throws RemoteException {
         // Print the received message on the server's console
         System.out.println("Received message: " + message);
 
@@ -25,6 +25,7 @@ public class StringServer extends UnicastRemoteObject implements RemoteBuffer {
 
         // Pass the count back to the client
         System.out.println("Number of letters: " + count);
+        return count;
     }
 
     public static void main(String[] args) throws Exception {

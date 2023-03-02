@@ -8,6 +8,7 @@ public class StringClient {
         RemoteBuffer rb = (RemoteBuffer) Naming.lookup("rmi://localhost:1000/MyBuffer");
 
         String message = "Hello World!";
-        rb.printAndCountLetters(message);
+        int count = rb.printAndCountLetters(message);
+        System.out.println("Number of letters received from server: " + count);
     }
 }
